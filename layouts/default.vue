@@ -1,20 +1,40 @@
 <template>
   <div class="bar">
-    <div class="container"><Sidebar /></div>
+    <Sidebar />
+    <nuxt/>
   </div>
+  
 </template>
 
 <script>
 import Sidebar from '../components/Sidebar.vue'
+import addForm from '../pages/add.vue'
 export default {
   components: {
-    Sidebar,
+    addForm,
   },
 }
 </script>
 
 <style>
-/* .bar {
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: #ffffff;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+ /*.bar {
   color: white;
   background-color: aqua;
   float: left;
@@ -29,6 +49,7 @@ export default {
   flex-direction: column;
   width: 10%;
 }
+
 body {
   position: relative;
   overflow-x: hidden;
