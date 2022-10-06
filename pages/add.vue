@@ -18,9 +18,13 @@
           <input type="radio" id="maleGender" name="gender" required />
           <label for="maleGender" class="text">Male</label>
           <input type="radio" id="femaleGender" name="gender" required />
-          <label for="femaleGender" class="text">Femlae</label>
+          <label for="femaleGender" class="text">Female</label>
         </div>
       </form>
+      <div class="emp-img">
+        <img src="user_logo.png" alt="employee_id_pic" />
+       
+      </div>
     </div>
     <div class="button">
       <input type="button" value="SAVE" id="save" />
@@ -36,6 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 body {
   height: 100vh;
   display: flex;
@@ -62,9 +67,9 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 50%;
+  width: 100%;
   transition: height 0.2s ease;
-  //   background: red;
+  // background: red;
 }
 
 .container .form {
@@ -90,6 +95,7 @@ body {
   border-bottom: 2px solid #ccc;
   border-top: 2px solid transparent;
   transition: all 0.2s ease;
+  margin-top: 10px;
 }
 
 .form .checkbox-text {
@@ -117,7 +123,7 @@ body {
   padding: 3px;
 }
 .button input {
-  border: 1px solid  rgb(63, 86, 107);
+  border: 1px solid rgb(63, 86, 107);
   border-radius: 3px;
   padding: 3px;
   width: 100px;
@@ -128,8 +134,21 @@ body {
   color: white;
 }
 
- #cancel:hover {
+#cancel{
+  border: 1px solid red;
+}
+#cancel:hover {
   background-color: red;
   color: white;
+}
+
+.emp-img img {
+  width: 150px;
+  border: 2px solid #ccc;
+  margin-left: 30%;
+ 
+}
+.emp-img{
+ float: right;
 }
 </style>
