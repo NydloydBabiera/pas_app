@@ -12,6 +12,9 @@
           <input type="text" placeholder="Last Name" required />
         </div>
         <div class="input-field">
+          <input type="text" placeholder="Address" required />
+        </div>
+        <div class="input-field">
           <input type="text" placeholder="Age" required />
         </div>
         <div class="checkbox-text">
@@ -50,7 +53,7 @@ body {
 }
 
 .container {
-  max-width: 430px;
+  max-width:430px;
   width: 100%;
   background: rgb(255, 255, 255);
   border-radius: 10px;
@@ -58,8 +61,6 @@ body {
   overflow: hidden;
   top: 30%;
   left: 30%;
-  // margin-top: -50px;
-  // margin-left: -50px;
   position: absolute;
 }
 
@@ -67,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 200%;
   transition: height 0.2s ease;
   // background: red;
 }
@@ -96,13 +97,16 @@ body {
   border-top: 2px solid transparent;
   transition: all 0.2s ease;
   margin-top: 10px;
+  padding-left: 5px;
+  //  background: red;
 }
 
 .form .checkbox-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 50px;
+
 }
 
 .checkbox-text .checkbox-content {
@@ -113,6 +117,7 @@ body {
 .checkbox-content input {
   margin: 0 8px -2px 4px;
   accent-color: #05102c;
+  
 }
 .form .button {
   margin-top: 35px;
